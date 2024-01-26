@@ -1,0 +1,170 @@
+:root{
+    --page-background: #F3EAE3;
+    --right-page-background: #FFFFFF;
+    --text-color:  #6b6b81;
+    --price-color: #008000;
+    --paragraph-color: #68696D;
+    --heading-color: #8c8c9b;
+    --price2-color2: #7F8287;
+}
+body{
+    background-color: var(--page-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.background{
+    display: flex;
+    position: relative;
+    left: -16%;
+}
+.left-page img{
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    visibility: visible;
+}
+.top-image img{
+    visibility: hidden;
+    width: 330px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.right-page{
+    width: 330px;
+    height: 450px;
+    background: var(--right-page-background);
+    border: 1px solid #EFEFEF;
+    box-shadow: 0.5px 2px 3px 3px #EFEFEF;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.right-page h1, h2, h4, p, button{
+    margin: 20px;
+}
+.right-page h4{
+    font-weight: 400;
+    color: var(--heading-color);
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.right-page h1{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60%;
+}
+.right-page p{
+    font-size: 15px;
+    color: var(--text-color);
+    width: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.price{
+    display: flex;
+}
+.price h2{
+    margin-top: 0px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--price-color);
+}
+.price p{
+    margin-top: 20px;
+    margin-left: 2%;
+    color: var(--price2-color2);
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    width: 75%;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 6px;
+    background-color: #008000;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    margin-left: 12%;
+    font-weight: 600;
+    
+}
+span{
+    margin-left: 12px;
+}
+button:hover{
+    background-color: #3c5f3c;
+}
+@media(max-width: 600px){
+    .left-page img{
+        visibility: hidden;
+    }
+    .top-image img{
+        visibility: visible;
+        position: absolute;
+        top: 27%;
+        width: 350px;
+    }
+    .background{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 140px;
+        left: -4px;
+    }
+    .right-page{
+        border-top-right-radius: none;
+        border-bottom-right-radius:none; 
+        width: 350px;
+        height: 400px;
+        position: relative;
+        bottom: 70px;
+    }
+    .right-page h4{
+        margin: 25px;
+        position: relative; 
+        top: 28px;
+        left: 2%;     
+
+    }
+    .right-page h1{
+        margin: 25px;
+        margin-top: 17%;
+        position: relative;
+        bottom: 25px; 
+        width: 90%;
+        left: 2%;     
+
+    }
+    .right-page p{
+        margin: 35px;
+        position: relative;
+        bottom: 49px; 
+        width: 89%;
+        left: -2%;     
+
+    }
+    .price{
+        position: relative;
+        bottom: 68px;
+    }
+    .price p{
+        position: relative;
+        bottom: 18px;
+        left: -34px;
+    }
+    button{
+        position: relative;
+        bottom: 95px;
+        width: 90%;
+        left: -26px;
+        padding: 20px;
+    }
+}
